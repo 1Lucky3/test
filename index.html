@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="js/JQuery.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="main-box">
+      <div class="license-type">
+        <div class="inputs-style">
+          <div class="input--style " id="raButOne">
+            <div class="input---style">
+              <input type="radio" onclick="getdetails(this)" name="radio" id="radioButone" checked>
+              <label for="radioButone">
+                <div class="text-style1">
+                  license plan<span class="get-text-info" id="licenseOne">#1</span>
+                </div> 
+                <div class="text-style2">
+                  $<span class="for-get-text" id="licenseOnePrice">13</span> per license
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="input--style"  id="raButTwo">
+            <div class="input---style">
+              <input type="radio" onclick="getdetails(this)" name="radio" id="radioButtwo">
+              <label for="radioButtwo">
+                <div class="text-style1">
+                  license plan <span class="get-text-info">#2</span>
+                </div>
+                <div class="text-style2">
+                  $<span class="for-get-text">22</span> per license
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="input--style"  id="raButThree"> 
+            <div class="input---style">
+              <input type="radio" onclick="getdetails(this)" name="radio" id="radioButthree">
+              <label for="radioButthree">
+                <div class="text-style1">
+                  license plan <span class="get-text-info">#3</span>
+                </div>
+                <div class="text-style2">
+                  $<span class="for-get-text">34</span> per license
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section-style">
+        <div class="hr-one">
+          <hr>
+        </div>
+        <div class="div-style-row">
+          <div class="div-text-style">
+            Number of licenses:
+          </div>
+          <div class="section-select-style">
+            <ul class="faux-select" data-selected-value="ted">
+              <li class="selected-option"><span id="span-">10</span>
+                <ul class="options">
+                  <li >10</li>
+                  <li >15</li>
+                  <li >20</li>
+                  <li >25</li>
+                  <li >30</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hr-two">
+          <hr>
+        </div>
+      </section>
+      <div class="footer-style">
+        <div class="fot-div-style">
+          total<span class="double-point">:</span> <span class="price---info">$<span class="price-info"></span><span class="justspan">us</span></span>
+        </div>
+        <div class="for-but-style">
+          <a href="file:///C:/Users/79512/Desktop/test/infoPage.html" target="_blank">
+            <button >
+              buy now
+            </button>
+          </a>
+        </div>
+        <div class="fut-div--style">
+          Selected plan: <span class="license-info"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/Script.js" ></script>
+</body>
+</html>
