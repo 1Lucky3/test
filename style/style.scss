@@ -2,24 +2,29 @@
     font-family: 'Bebas';
     src: url("../fonts/BebasNeue-Regular.ttf");
 }
+
 @font-face {
     font-family: 'Open Sans';
     src: url("../fonts/OpenSans-Light.ttf");
 }
+
 $fontFam:'Bebas';
-$fontFamOpenSans:'Open Sans'; 
-body{
-    margin:20px;
+$fontFamOpenSans:'Open Sans';
+
+body {
+    margin: 20px;
     padding: 0;
     display: flex;
     justify-content: center;
 }
-.container{
+
+.container {
     height: 605px;
     width: 590px;
     background-color: #ebebeb;
 }
-.main-box{
+
+.main-box {
     background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
@@ -27,110 +32,129 @@ body{
     height: 579px;
     margin: 13px;
 }
-.license-type{
+
+.license-type {
     font-family: $fontFam;
     color: #787878;
     height: 238px;
 }
-.inputs-style{
-    
-    div, label{
+
+.inputs-style {
+
+    div,
+    label {
         display: flex;
         flex-direction: row;
     }
-    input{
+
+    input {
         visibility: hidden;
         position: absolute;
     }
-    
+
 }
-.input---style{
+
+.input---style {
     padding: 16px 0 19px 24px;
     width: 100%;
 }
 
 
 
-input[type=radio] + label:before{
-  height:28px;
-  width:28px;
-  content: " ";
-  display:inline-block;
-  vertical-align: baseline;
-  border:6px solid #dadada;
-  border-radius:50%;
+input[type=radio]+label:before {
+    height: 28px;
+    width: 28px;
+    content: " ";
+    display: inline-block;
+    vertical-align: baseline;
+    border: 6px solid #dadada;
+    border-radius: 50%;
 }
-input[type=radio]:checked + label:before{
-  background:radial-gradient(circle closest-side,
-    #0294bf 7.8px,#ebf4f7 8.5px,#ebf4f7 11px);
-  border:6px solid #34648e;
+
+input[type=radio]:checked+label:before {
+    background: radial-gradient(circle closest-side,
+            #0294bf 7.8px, #ebf4f7 8.5px, #ebf4f7 11px);
+    border: 6px solid #34648e;
 }
-.input--syle{
+
+.input--syle {
     background: #ebf4f7;
     border: 1px solid #b8d7e2;
 }
 
-.input--style{
+.input--style {
     height: 72px;
     width: 526px;
     margin: 10px 18px 0 18px;
 }
 
-.text-style1, .text-style2{
+.text-style1,
+.text-style2 {
     padding-top: 5px;
 }
-.text-style1{
+
+.text-style1 {
     padding-left: 19px;
     font-size: 27px;
     text-transform: uppercase;
 }
-.get-text-info{
+
+.get-text-info {
     padding-left: 5px;
 }
-.text-style2{
+
+.text-style2 {
     padding-left: 162px;
     font-size: 18px;
     font-family: $fontFamOpenSans;
     font-weight: bold;
 }
-.for-get-text{
+
+.for-get-text {
     padding-right: 5px;
 }
-.section-style{
+
+.section-style {
     display: flex;
     flex-direction: column;
     height: 92px;
     margin: 20px 10px 0 10px;
     width: 542px;
 }
-.div-style-row{
+
+.div-style-row {
     display: flex;
     flex-direction: row;
 }
-.hr-one{
+
+.hr-one {
     height: 0;
-    hr{
+
+    hr {
         margin: 0 8px 0 9px;
         background-color: #cccccc;
         border: 0px;
         height: 1px;
     }
 }
-.div-text-style{
+
+.div-text-style {
     padding-top: 40px;
     padding-left: 132px;
     width: 132px;
     font-family: $fontFamOpenSans;
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 14px;
     text-align: left;
 }
-.section-select-style{
+
+.section-select-style {
     padding-top: 33px;
     padding-left: 6px;
-    
+
 
 }
+
 .faux-select {
     margin: 0;
     list-style-type: none;
@@ -142,69 +166,79 @@ input[type=radio]:checked + label:before{
     width: 52px;
     display: inline-block;
     position: relative;
+
     li {
-      padding: 0;
-      text-indent: 0;
-      position: relative;
-      .options {
-        display: block;
-        list-style-type: none;
         padding: 0;
-        margin: 0.4em 0 0 0;
-        background: transparent;
-        position: absolute;
-        width: 100%;
-        max-height: 0px;
-        overflow: hidden;
-        border: 2px solid transparent;
-        top: 1.2em;
-        left: -0.45em;
-        transition: all ease 0.25s;
-        li {
-          padding: 0.4em 5px;
-          &:hover {
-            background: #cddef9 ;
-          }
+        text-indent: 0;
+        position: relative;
+
+        .options {
+            display: block;
+            list-style-type: none;
+            padding: 0;
+            margin: 0.4em 0 0 0;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            max-height: 0px;
+            overflow: hidden;
+            border: 2px solid transparent;
+            top: 1.2em;
+            left: -0.45em;
+            transition: all ease 0.25s;
+
+            li {
+                padding: 0.4em 5px;
+
+                &:hover {
+                    background: #cddef9;
+                }
+            }
         }
-      }
-      .options.open {
-        margin-top: 6px;
-        width: 62px;
-        background: #ffffff;
-        max-height: 1000%;
-        border: 2px solid #8bade4;
-        border-top: none;
-      }
+
+        .options.open {
+            margin-top: 6px;
+            width: 62px;
+            background: #ffffff;
+            max-height: 1000%;
+            border: 2px solid #8bade4;
+            border-top: none;
+        }
     }
+
     &:before {
-      content: "";
-      width: 0;
-      height: 0;
-      border-left: 0.25em solid transparent;
-      border-right: 0.25em solid transparent;
-      border-top: 0.35em solid #000000;
-      position: absolute;
-      top: 0.8em;
-      right: 0.4em;
-      transition: all ease 0.25s;
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 0.25em solid transparent;
+        border-right: 0.25em solid transparent;
+        border-top: 0.35em solid #000000;
+        position: absolute;
+        top: 0.8em;
+        right: 0.4em;
+        transition: all ease 0.25s;
     }
 }
-.hr-two{
+
+.hr-two {
     padding-top: 29px;
     height: 0;
-    hr{
+
+    hr {
         margin: 0 8px 0 9px;
         background-color: #cccccc;
         border: 0px;
         height: 1px;
     }
 }
-.footer-style{
+
+.footer-style {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
-.fot-div-style{
+
+.fot-div-style {
     color: #777777;
     font-family: $fontFam;
     font-size: 31px;
@@ -213,17 +247,21 @@ input[type=radio]:checked + label:before{
     padding-left: 222px;
     height: 21px;
 }
-.price---info{
+
+.price---info {
     color: #3388a8;
 }
-.justspan{
+
+.justspan {
     font-size: 20px;
     vertical-align: 7px;
 }
-.for-but-style{
+
+.for-but-style {
     padding-top: 30px;
     padding-left: 190px;
-    button{
+
+    button {
         padding: 16px 60px;
         border-radius: 100px;
         background-color: #33a845;
@@ -236,23 +274,506 @@ input[type=radio]:checked + label:before{
         font-weight: bold;
     }
 }
-.fut-div--style{
+
+.fut-div--style {
     height: 66px;
     padding-top: 30px;
     padding-left: 207px;
     font-family: $fontFamOpenSans;
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 17px;
     color: #3388a8;
     letter-spacing: 1.5px;
-    .license-info{
+
+    .license-info {
         padding-left: 3px;
     }
 }
-.double-point{
+
+.double-point {
     font-size: 24px;
     font-family: $fontFam;
     font-weight: bold;
     padding-left: 1.5px;
+
+}
+
+/* 75% from full size */
+@media screen and (max-width: 630px) {
+    body {
+        margin: 15px;
+    }
+
+    .container {
+        margin: auto;
+        height: 453px;
+        width: 442px;
+    }
+
+    .main-box {
+        width: auto;
+        margin: 9.75px;
+        height: 434.25px;
+    }
+
+    .input--style {
+        height: 54px;
+        width: 394.5px;
+        margin: 7.5px 13.5px 0 13.5px;
+    }
+
+    .input---style {
+        padding: 12px 0 14.25px 18px;
+        width: 100%;
+    }
+
+    .text-style1 {
+        padding-left: 14.25px;
+        font-size: 20.25px;
+        text-transform: uppercase;
+    }
+
+    .text-style2 {
+        padding-left: 121.5px;
+        font-size: 13.5px;
+        font-family: "Open Sans";
+        font-weight: bold;
+    }
+
+    .text-style1,
+    .text-style2 {
+        padding-top: 3.75px;
+    }
+
+    input[type=radio]:checked+label:before {
+        background: radial-gradient(circle closest-side, #0294bf 5.85px, #ebf4f7 6.375px, #ebf4f7 8.25px);
+        border: 4.5px solid #34648e;
+    }
+
+    input[type=radio]+label:before {
+        height: 21px;
+        width: 21px;
+        border: 4.5px solid #dadada;
+    }
+
+    .section-style {
+        height: 69px;
+        margin: 15px 7.5px 0 7.5px;
+        width: 406.5px;
+    }
+
+    .hr-one hr {
+        margin: 0 6px 0 6.75px;
+    }
+
+    .div-text-style {
+        padding-top: 30px;
+        padding-left: 99px;
+        width: 99px;
+        font-size: 10.5px;
+    }
+
+    .section-select-style {
+        padding-top: 24.75px;
+        padding-left: 4.5px;
+    }
+
+    .faux-select {
+        padding: 4.5px 3.75px;
+        width: 39px;
+    }
+
+    .faux-select:before {
+        border-left: 0.1875em solid transparent;
+        border-right: 0.1875em solid transparent;
+        border-top: 0.2625em solid #000000;
+        top: 0.6em;
+        right: 0.3em;
+    }
+
+    .faux-select li .options.open {
+        margin-top: 4.5px;
+        width: 45.5px;
+    }
+
+    .faux-select li .options {
+        margin: 0.3em 0 0 0;
+        top: 0.9em;
+        left: -0.3375em;
+    }
+
+    .faux-select li .options li {
+        padding: 0.3em 3.75px;
+    }
+
+    .hr-two {
+        padding-top: 21.75px;
+    }
+
+    .hr-two hr {
+        margin: 0 6px 0 6.75px;
+    }
+
+    .fot-div-style {
+        font-size: 23.25px;
+        padding-top: 29.25px;
+        padding-left: 166.5px;
+        height: 15.75px;
+    }
+
+    .double-point {
+        font-size: 18px;
+        padding-left: 1.125px;
+    }
+
+    .for-but-style {
+        padding-top: 20px;
+        padding-left: 142.5px;
+    }
+
+    .justspan {
+        font-size: 15px;
+        vertical-align: 5.25px;
+    }
+
+    .for-but-style button {
+        padding: 12px 45px;
+        border-radius: 75px;
+        font-size: 10.5px;
+    }
+
+    .fut-div--style {
+        height: 49.5px;
+        padding-top: 20px;
+        padding-left: 155.25px;
+        font-size: 12.75px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        margin: 0px;
+    }
+
+    .container {
+        margin: auto;
+        height: 385.05px;
+        width: 375.7px;
+    }
+
+    .main-box {
+        width: auto;
+        margin: 8.2575px;
+        height: 369px;
+    }
+
+    .input--style {
+        height: 45.9px;
+        width: 335.325px;
+        margin: 6.375px 11.475px 0 11.475px;
+    }
+
+    .input---style {
+        padding: 10.2px 0 12.1125px 15.2px;
+        width: 100%;
+    }
+
+    .text-style1 {
+        padding-left: 12.1125px;
+        font-size: 17.2125px;
+    }
+
+    .text-style2 {
+        padding-left: 103.275px;
+        font-size: 11.475px;
+    }
+
+    .text-style1,
+    .text-style2 {
+        padding-top: 3.1875px;
+    }
+
+    input[type=radio]:checked+label:before {
+        background: radial-gradient(circle closest-side, #0294bf 4.9725px, #ebf4f7 5.41875px, #ebf4f7 7.0125px);
+        border: 3.8255px solid #34648e;
+    }
+
+    input[type=radio]+label:before {
+        height: 17.85px;
+        width: 17.85px;
+        border: 3.825px solid #dadada
+    }
+
+    .section-style {
+        height: 58.65px;
+        margin: 12.75px 6.375px 0 6.375px;
+        width: 345.525px;
+    }
+
+    .hr-one hr {
+        margin: 0 5.1px 0 5.7375px;
+    }
+
+    .div-text-style {
+        padding-top: 30px;
+        padding-left: 84.15px;
+        width: 84.15px;
+        font-size: 8.925px;
+    }
+
+    .section-select-style {
+        padding-top: 24.75px;
+        padding-left: 3.825px;
+    }
+
+    .faux-select {
+        padding: 3.825px 3.1875px;
+        width: 33.15px;
+    }
+
+    .faux-select:before {
+        border-left: 0.1593em solid transparent;
+        border-right: 0.1593em solid transparent;
+        border-top: 0.2231em solid #000000;
+        top: 0.51em;
+        right: 0.255em;
+    }
+
+    .faux-select li .options.open {
+        margin-top: 3.825px;
+        width: 38.25px;
+    }
+
+    .faux-select li .options {
+        margin: 0.255em 0 0 0;
+        top: 0.765em;
+        left: -0.2868em;
+    }
+
+    .faux-select li .options li {
+        padding: 0.255em 3.1875px;
+    }
+
+    .hr-two {
+        padding-top: 18.4875px;
+    }
+
+    .hr-two hr {
+        margin: 0 5.1px 0 5.7375px;
+    }
+
+    .fot-div-style {
+        font-size: 19.7625px;
+        padding-top: 24.8625px;
+        padding-left: 141.525px;
+        height: 13.3875px;
+    }
+
+    .double-point {
+        font-size: 15.3px;
+        padding-left: 0.95625px;
+    }
+
+    .for-but-style {
+        padding-top: 17px;
+        padding-left: 121.125px;
+    }
+
+    .justspan {
+        font-size: 12.75px;
+        vertical-align: 4.4625px;
+    }
+
+    .for-but-style button {
+        padding: 10.2px 38.25px;
+        border-radius: 63.75px;
+        font-size: 8.925px;
+    }
+
+    .fut-div--style {
+        height: 42.075px;
+        padding-top: 17px;
+        padding-left: 131.9625px;
+        font-size: 10.8375px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        margin: 0px;
+    }
+
+    .container {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-box {
+        width: auto;
+        margin: 4px;
+        height: 369px;
+    }
+
+    .input--style {
+        height: 45.9px;
+        width: auto;
+        margin: 5px;
+    }
+
+    .input---style {
+        padding: 10px 0 1px 7.5px;
+        width: 100%;
+    }
+
+    .text-style1 {
+        padding-left: 12.1125px;
+        font-size: 105%;
+    }
+
+    .text-style2 {
+        font-size: 11.475px;
+        position: absolute;
+        left: 38%;
+    }
+
+    .text-style1,
+    .text-style2 {
+        padding-top: 1.5px;
+    }
+
+    input[type=radio]:checked+label:before {
+        background: radial-gradient(circle closest-side, #0294bf 3.8px, #ebf4f7 4.5px, #ebf4f7 6px);
+        border: 3px solid #34648e;
+    }
+
+    input[type=radio]+label:before {
+        height: 13px;
+        width: 13px;
+        border: 3px solid #dadada;
+    }
+
+    .section-style {
+        height: 58.65px;
+        margin: 6px 2.8px 0 2.8px;
+        width: auto;
+    }
+
+    .hr-one hr {
+        margin: 0 3.8px 0 3.8px
+    }
+
+    .div-text-style {
+        padding-top: 30px;
+        padding-left: 84.15px;
+        width: 84.15px;
+        font-size: 8.925px;
+    }
+
+    .section-select-style {
+        padding-top: 27px;
+        padding-left: 3.825px;
+        font-size: 11px;
+    }
+
+    .faux-select {
+        padding: 3px 3px;
+        width: 25px;
+        border: 1.5px solid #8bade4;
+    }
+    .faux-select:before {
+        border-left: 0.19em solid transparent;
+        border-right: 0.19em solid transparent;
+        border-top: 0.36em solid #000000;
+        top: 0.6em;
+        right: 0.255em;
+    }
+
+    .faux-select li .options.open {
+        margin-top: 3.825px;
+        border: 1.5px solid #8bade4;
+        margin-top: 7.9px;
+        width: 31px;
+    }
+
+    .faux-select li .options {
+        
+        margin: 0.15em 0 0 0;
+        top: 0.7em;
+        left: -0.4em;
+    }
+
+    .faux-select li .options li {
+        padding: 0.15em 2px;
+    }
+
+    .hr-two {
+        padding-top: 18.4875px;
+    }
+
+    .hr-two hr {
+        margin: 0 3.8px 0 3.8px
+    }
+
+    .fot-div-style {
+        font-size: 17px;
+        padding-top: 24.8625px;
+        padding-left: 125.525px;
+        height: 13.3875px;
+    }
+
+    .double-point {
+        font-size: 13.3px;
+        padding-left: 0.95625px;
+    }
+
+    .for-but-style {
+        padding-top: 17px;
+        padding-left: 114.125px
+    }
+
+    .justspan {
+        font-size: 12.75px;
+        vertical-align: 2.1px;
+    }
+
+    .for-but-style button {
+        padding: 7.2px 30.25px;
+        border-radius: 60.75px;
+        font-size: 7.925px;
+    }
+
+    .fut-div--style {
+        height: 42.075px;
+        padding-top: 17px;
+        padding-left: 120.9625px;
+        font-size: 9.8375px;
+        letter-spacing: 1px
+    }
+}
+
+@media screen and (max-width: 320px) {
     
+    .fot-div-style {
+        padding-left: 110.525px;
+    }
+
+    .for-but-style {
+        padding-left: 100px
+    }
+
+    .justspan {
+        font-size: 12.75px;
+        vertical-align: 1.9px;
+    }
+
+    .for-but-style button {
+        padding: 7.2px 30.25px;
+        border-radius: 60.75px;
+        font-size: 7.925px;
+    }
+
+    .fut-div--style {
+        padding-left: 105px;
+    }
 }
